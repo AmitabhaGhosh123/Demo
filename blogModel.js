@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 // declare schema object.
 var Schema = mongoose.Schema;
 
+// declaring new schema
 var myBlogSchema = new Schema({
 
 	title 		: {type:String,default:'',required:true},
@@ -18,4 +19,4 @@ var myBlogSchema = new Schema({
 });
 
 
-mongoose.model('Blog',myBlogSchema);
+mongoose.model('Blog',myBlogSchema); // including model Blog in newly created schema
